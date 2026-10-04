@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lingesh Kumar M | Generative AI &amp; Machine Learning Developer</title>
+<meta name="description" content="Lingesh Kumar M is a Generative AI and Machine Learning Developer based in Bengaluru, building AI agents, LLM applications, RAG systems, NLP solutions, machine learning systems and intelligent full-stack applications." />
+<link rel="canonical" href="https://your-domain-here.com/" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Lingesh Kumar M | Generative AI & Machine Learning Developer" />
+<meta property="og:description" content="Building intelligent systems with LLMs, AI agents, RAG, NLP and machine learning." />
+<meta property="og:url" content="https://your-domain-here.com/" />
+<meta property="og:image" content="public/images/og-cover.jpg" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Lingesh Kumar M | Generative AI & Machine Learning Developer" />
+<meta name="twitter:description" content="Building intelligent systems with LLMs, AI agents, RAG, NLP and machine learning." />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23050505'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Georgia,serif' fill='%23D4AF37' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ============================= PRELOADER ============================= -->
+<div id="preloader" aria-hidden="true">
+  <canvas id="preloaderCanvas"></canvas>
+
+  <div class="preloader-fallback" id="preloaderFallback">
+    <div class="preloader-name">
+      <span>LINGESH</span>
+      <span>KUMAR M</span>
+    </div>
+  </div>
+
+  <div class="preloader-line"><i id="preloaderLineFill"></i></div>
+
+  <button class="preloader-skip" id="skipPreloader" type="button">SKIP <span>&rarr;</span></button>
+</div>
+
+<!-- ======================== CUSTOM CURSOR (desktop) ====================== -->
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"><span id="cursorLabel"></span></div>
+
+<!-- ========================= SCROLL PROGRESS ============================ -->
+<div class="scroll-progress" aria-hidden="true"><i id="scrollProgressBar"></i></div>
+
+<!-- Skip link for accessibility -->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- =============================== NAV =================================== -->
+<header class="site-nav" id="siteNav">
+  <a href="#hero" class="nav-logo" aria-label="Lingesh Kumar M — home">LKM</a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#leo">LEO 2.0</a>
+    <a href="#work">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#hero">Home</a>
+  <a href="#about">About</a>
+  <a href="#leo">LEO 2.0</a>
+  <a href="#work">Work</a>
+  <a href="#skills">Skills</a>
+  <a href="#resume">Resume</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<main id="main">
+
+  <!-- ========================= INTRO VIDEO OVERLAY ======================== -->
+  <section id="introOverlay" class="intro-overlay" aria-label="Introduction">
+    <div class="intro-frame">
+      <video
+        id="introVideo"
+        class="intro-video"
+        poster="public/images/avatar.webp"
+        muted
+        playsinline
+        preload="metadata"
+      >
+        <source src="public/videos/lingesh-intro.mp4" type="video/mp4" />
+      </video>
+      <div class="intro-placeholder" id="introPlaceholder">
+        <div class="avatar-frame">
+          <div class="avatar-monogram">LK</div>
+          <div class="avatar-ring"></div>
+        </div>
+        <p class="intro-placeholder-caption">Avatar introduction — video coming soon</p>
+      </div>
+      <div class="intro-vignette"></div>
+      <button class="intro-sound" id="introSound" type="button" aria-pressed="false" aria-label="Unmute introduction">
+        <span class="intro-sound-icon">&#128263;</span> TAP FOR SOUND
+      </button>
+    </div>
+    <button class="skip-intro" id="skipIntro">SKIP INTRO <span>&rarr;</span></button>
+  </section>
+
+  <!-- =============================== HERO =================================== -->
+  <section id="hero" class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <canvas id="heroCanvas"></canvas>
+    </div>
+
+    <div class="hero-content">
+      <h1 class="hero-headline">
+        <span class="line" data-line>BUILDING</span>
+        <span class="line" data-line>INTELLIGENT</span>
+        <span class="line gold" data-line>SYSTEMS.</span>
+      </h1>
+      <h2 class="hero-sub-headline">
+        <span class="line" data-line>THAT THINK.</span>
+        <span class="line" data-line>ACT.</span>
+        <span class="line" data-line>ADAPT.</span>
+      </h2>
+
+      <div class="hero-identity">
+        <p class="hero-name">LINGESH KUMAR M</p>
+        <p class="hero-role">Generative AI &amp; Machine Learning Developer</p>
+        <p class="hero-desc">I build intelligent systems using Generative AI, LLMs, AI agents, RAG, NLP, machine learning and full-stack engineering.</p>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-gold magnetic" data-cursor="VIEW PROJECT">EXPLORE MY WORK <span class="btn-arrow">&rarr;</span></a>
+        <a href="#resume" class="btn btn-ghost magnetic" data-cursor="VIEW RESUME">VIEW RESUME</a>
+      </div>
+
+      <div class="hero-links">
+        <a href="https://github.com/Lingeshkumar24-code" target="_blank" rel="noopener" class="hero-link magnetic" data-cursor="GITHUB">GITHUB</a>
+        <a href="https://linkedin.com/in/lingeshkumar24" target="_blank" rel="noopener" class="hero-link magnetic" data-cursor="LINKEDIN">LINKEDIN</a>
+      </div>
+    </div>
+
+    <div class="hero-avatar">
+      <div class="avatar-frame avatar-frame--hero" aria-hidden="true">
+        <picture>
+          <source srcset="public/images/avatar.webp" type="image/webp" />
+          <img src="public/images/avatar.png" alt="" id="heroAvatarImg" />
+        </picture>
+        <div class="avatar-monogram" id="heroAvatarFallback">LK</div>
+      </div>
+
+      <button class="self-intro-btn magnetic" id="selfIntroBtn" type="button" data-cursor="PLAY">
+        <span class="self-intro-icon">&#9658;</span> SELF INTRO
+      </button>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true"><span></span>SCROLL</div>
+  </section>
+
+  <!-- =============================== ABOUT =================================== -->
+  <section id="about" class="section about">
+    <div class="section-head">
+      <span class="section-index">01</span>
+      <h2 class="section-title">About Me</h2>
+    </div>
+
+    <p class="about-paragraph" id="aboutParagraph">
+      I&rsquo;m Lingesh Kumar M, a <b data-highlight>Generative AI</b> and <b data-highlight>Machine Learning</b> Developer based in Bengaluru, currently pursuing my Master of Computer Applications with a specialization in Generative AI. I enjoy building intelligent systems that combine large language models, <b data-highlight>AI Agents</b>, retrieval-augmented generation, <b data-highlight>NLP</b>, machine learning and full-stack engineering. My work focuses on turning AI from something that simply generates responses into systems that can understand context, reason over information, interact with tools and contribute to real-world workflows. From autonomous personal assistants and multilingual voice systems to AI-powered race strategy, document intelligence and interview platforms, I&rsquo;m interested in building practical, <b data-highlight>Real-world AI</b> products that connect intelligent models with real applications.
+    </p>
+
+    <div class="stats-grid" id="statsGrid"></div>
+  </section>
+
+  <!-- ============================= EDUCATION ================================= -->
+  <section id="education" class="section education">
+    <div class="section-head">
+      <span class="section-index">02</span>
+      <h2 class="section-title">Education</h2>
+    </div>
+    <div class="timeline" id="educationTimeline"></div>
+  </section>
+
+  <!-- =============================== LEO 2.0 ================================== -->
+  <section id="leo" class="section leo">
+    <div class="leo-intro">
+      <div class="section-head">
+        <span class="section-index">03</span>
+        <h2 class="section-title">LEO 2.0</h2>
+      </div>
+      <p class="leo-subtitle">Autonomous personal AI computer assistant</p>
+      <p class="leo-desc">LEO 2.0 is an autonomous Windows personal AI assistant designed to turn natural-language and voice instructions into real computer actions. Instead of functioning only as a chatbot, LEO follows an agentic loop of planning, execution, observation, verification, recovery and reporting.</p>
+
+      <div class="leo-orb-wrap" aria-hidden="true">
+        <canvas id="leoOrb"></canvas>
+      </div>
+    </div>
+
+    <!-- architecture -->
+    <div class="leo-block">
+      <h3 class="leo-block-title">Architecture</h3>
+      <div class="leo-pipeline" id="leoPipeline"></div>
+    </div>
+
+    <!-- features -->
+    <div class="leo-block">
+      <h3 class="leo-block-title">Capabilities</h3>
+      <div class="leo-features" id="leoFeatures"></div>
+    </div>
+
+    <!-- model stack -->
+    <div class="leo-block">
+      <h3 class="leo-block-title">Model Stack</h3>
+      <p class="leo-block-note">Routing is configurable rather than fixed — these are example roles from the project&rsquo;s configuration, not models running simultaneously.</p>
+      <div class="leo-providers" id="leoProviders"></div>
+      <div class="leo-models" id="leoModels"></div>
+    </div>
+
+    <!-- fine-tuning -->
+    <div class="leo-block">
+      <h3 class="leo-block-title">Personalized AI <span class="badge badge-experimental">EXPERIMENTAL / IN DEVELOPMENT</span></h3>
+      <p class="leo-block-note">Exploring QLoRA/PEFT fine-tuning for a lightweight local conversational assistant with a friendly, informal response style.</p>
+      <div class="leo-finetune" id="leoFinetune"></div>
+    </div>
+
+    <!-- tech constellation -->
+    <div class="leo-block">
+      <h3 class="leo-block-title">Tech Stack</h3>
+      <div class="tech-constellation" id="leoTechConstellation"></div>
+    </div>
+
+    <div class="leo-cta">
+      <a href="https://github.com/Lingeshkumar24-code/Leo2.o" target="_blank" rel="noopener" class="btn btn-gold magnetic" data-cursor="GITHUB">VIEW ON GITHUB <span class="btn-arrow">&rarr;</span></a>
+      <a href="#leoPipeline" class="btn btn-ghost magnetic">EXPLORE ARCHITECTURE <span class="btn-arrow">&darr;</span></a>
+    </div>
+  </section>
+
+  <!-- ============================== PROJECTS ================================== -->
+  <section id="work" class="section work">
+    <div class="section-head">
+      <span class="section-index">04</span>
+      <h2 class="section-title">Featured Projects</h2>
+    </div>
+    <div id="projectsList" class="projects-list"></div>
+  </section>
+
+  <!-- =============================== SKILLS =================================== -->
+  <section id="skills" class="section skills">
+    <div class="section-head">
+      <span class="section-index">05</span>
+      <h2 class="section-title">Technical Skills</h2>
+    </div>
+
+    <div class="skills-categories" id="skillsCategories"></div>
+
+    <div class="constellation-wrap">
+      <h3 class="leo-block-title">Explore the Stack</h3>
+      <div class="constellation" id="skillConstellation">
+        <div class="constellation-center">LINGESH</div>
+      </div>
+      <p class="constellation-hint">Hover a tag to see where it&rsquo;s used.</p>
+    </div>
+  </section>
+
+  <!-- =========================== CERTIFICATIONS =============================== -->
+  <section id="certifications" class="section certifications">
+    <div class="section-head">
+      <span class="section-index">06</span>
+      <h2 class="section-title">Certifications</h2>
+    </div>
+    <div class="cert-row" id="certRow"></div>
+  </section>
+
+  <!-- =============================== RESUME =================================== -->
+  <section id="resume" class="section resume">
+    <div class="resume-inner">
+      <div class="resume-text">
+        <div class="section-head">
+          <span class="section-index">07</span>
+          <h2 class="section-title">My Resume</h2>
+        </div>
+        <p class="resume-desc">Want the complete overview of my education, experience, technical skills and projects?</p>
+
+        <div class="resume-highlights">
+          <span>MCA &middot; Generative AI</span>
+          <span>8.6 CGPA</span>
+          <span>9+ AI/ML Projects</span>
+          <span>Bengaluru, India</span>
+        </div>
+
+        <div class="resume-actions">
+          <a href="public/resume/Lingesh-Kumar-M-Resume.pdf" target="_blank" rel="noopener" class="btn btn-gold magnetic" data-cursor="VIEW RESUME">VIEW RESUME <span class="btn-arrow">&rarr;</span></a>
+          <a href="public/resume/Lingesh-Kumar-M-Resume.pdf" download class="btn btn-ghost magnetic">DOWNLOAD RESUME</a>
+        </div>
+        <a href="public/resume/Lingesh-Kumar-M-Resume.pdf" download class="download-cv">DOWNLOAD CV <span>&darr;</span></a>
+      </div>
+      <div class="resume-preview" aria-hidden="true">
+        <div class="doc-preview">
+          <div class="doc-preview-head">
+            <span class="doc-preview-dot"></span>
+            <span class="doc-preview-filename">Lingesh-Kumar-M-Resume.pdf</span>
+          </div>
+          <i style="width:70%"></i><i style="width:100%"></i><i style="width:90%"></i><i style="width:60%"></i>
+          <i class="doc-gap"></i>
+          <i style="width:85%"></i><i style="width:95%"></i><i style="width:55%"></i>
+          <i class="doc-gap"></i>
+          <i style="width:75%"></i><i style="width:65%"></i>
+          <span class="doc-preview-tag">PDF</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================== GITHUB =================================== -->
+  <section id="githubterm" class="section githubterm">
+    <div class="section-head">
+      <span class="section-index">08</span>
+      <h2 class="section-title">GitHub</h2>
+    </div>
+    <div class="terminal">
+      <div class="terminal-bar"><span></span><span></span><span></span></div>
+      <div class="terminal-body" id="terminalBody"></div>
+    </div>
+    <a href="https://github.com/Lingeshkumar24-code" target="_blank" rel="noopener" class="btn btn-gold magnetic" data-cursor="GITHUB">EXPLORE MY GITHUB <span class="btn-arrow">&nearr;</span></a>
+  </section>
+
+  <!-- =============================== CONTACT =================================== -->
+  <section id="contact" class="section contact">
+    <div class="contact-grid">
+      <div class="contact-text">
+        <h2 class="contact-headline">
+          <span class="line" data-line>LET&rsquo;S BUILD</span>
+          <span class="line" data-line>SOMETHING</span>
+          <span class="line gold" data-line>INTELLIGENT.</span>
+        </h2>
+        <p class="contact-sub">Have an idea, project, collaboration or AI problem worth exploring? Let&rsquo;s connect.</p>
+
+        <div class="contact-details">
+          <p>Lingesh Kumar M</p>
+          <p>Bengaluru, Karnataka, India</p>
+        </div>
+
+        <div class="contact-actions">
+          <a href="mailto:lingeshkumar400@gmail.com" class="btn btn-gold magnetic">EMAIL ME <span class="btn-arrow">&rarr;</span></a>
+          <a href="https://linkedin.com/in/lingeshkumar24" target="_blank" rel="noopener" class="btn btn-ghost magnetic">LINKEDIN</a>
+          <a href="https://github.com/Lingeshkumar24-code" target="_blank" rel="noopener" class="btn btn-ghost magnetic">GITHUB</a>
+          <a href="public/resume/Lingesh-Kumar-M-Resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost magnetic">VIEW RESUME</a>
+        </div>
+      </div>
+
+      <div class="contact-orb-wrap" aria-hidden="true">
+        <canvas id="contactOrb"></canvas>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- =============================== FOOTER =================================== -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <p class="footer-name">LINGESH KUMAR M</p>
+    <p class="footer-role">Generative AI &amp; Machine Learning Developer</p>
+    <p class="footer-tags">AI &middot; Agents &middot; RAG &middot; ML &middot; Full Stack</p>
+  </div>
+  <div class="footer-links">
+    <a href="https://github.com/Lingeshkumar24-code" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://linkedin.com/in/lingeshkumar24" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:lingeshkumar400@gmail.com">Email</a>
+    <a href="public/resume/Lingesh-Kumar-M-Resume.pdf" target="_blank" rel="noopener">Resume</a>
+  </div>
+  <p class="footer-copy">&copy; 2026 Lingesh Kumar M. All rights reserved.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
