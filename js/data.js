@@ -12,7 +12,7 @@ const PROFILE = {
   github: "https://github.com/Lingeshkumar24-code",
   leetcode: "https://leetcode.com/u/lingeshkumar24/",
   hackerrank: "https://hackerrank.com/profile/klingeshMCA25",
-  resumePath: "public/resume/Lingesh-Kumar-M-Resume.pdf",
+  resumePath: "public/resume/resume.pdf",
   avatarPath: "public/images/avatar.png",
   introVideoPath: "public/videos/lingesh-intro.mp4",
 };

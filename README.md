@@ -23,7 +23,7 @@ js/data.js           → ALL content lives here: projects, LEO 2.0 features, cer
 js/main.js           → rendering + interactions (cursor, nav, reveals, canvases, GSAP)
 public/images/       → avatar.png / avatar.webp (your portrait)
 public/videos/       → put lingesh-intro.mp4 here
-public/resume/       → put Lingesh-Kumar-M-Resume.pdf here
+public/resume/       → put resume.pdf here
 ```
 
 ## The 3D particle sphere — now a running motif, not just the intro
@@ -48,7 +48,7 @@ The preloader samples your name as text, then animates particles through three s
 
 - `public/images/avatar.png` (+ `avatar.webp`, served first via `<picture>` for a ~9x smaller download) — your transparent cutout portrait. It's rendered with `object-fit: contain` and a gold `drop-shadow` that follows the silhouette itself, not a rectangular box, so it reads as floating over the particle sphere rather than sitting in a photo frame. A bottom mask fade blends its hard cutout edge into the dark background.
 - `public/videos/lingesh-intro.mp4` — your intro video, re-encoded for the web (720×1280 h264/aac, faststart) down to under 1MB from the original ~25MB with no visible quality loss. It plays muted-autoplay on load (browser policy), with a **TAP FOR SOUND** button in the top-right corner; it dismisses itself into the hero the moment it finishes, and **SKIP INTRO** always works too.
-- `public/resume/Lingesh-Kumar-M-Resume.pdf` — your real resume. Every "View Resume" / "Download Resume" / "Download CV" control already points here.
+- `public/resume/resume.pdf` — your real resume. Every "View Resume" / "Download Resume" / "Download CV" control points here.
 
 To swap any of these later, just overwrite the file at the same path — no code or layout changes needed. If an asset ever goes missing or fails to load, the site falls back gracefully (gold monogram for the avatar, a "coming soon" card for the video).
 
